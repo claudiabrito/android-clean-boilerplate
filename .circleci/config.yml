@@ -6,9 +6,9 @@ jobs:
       - image: circleci/android:api-26-alpha
     environment:
       JVM_OPTS: -Xmx3200m
-    branches:
-      only:
-        - feature/circle-ci
+    #branches:
+    #  only:
+    #    - feature/circle-ci
     steps:
       - checkout
       - restore_cache:
